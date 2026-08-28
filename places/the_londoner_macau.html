@@ -27,6 +27,57 @@
         <p style="font-size: 20px">The Londoner Macau is a large integrated resort inspired by the architecture and atmosphere of London. Its distinctive design features famous British-inspired landmarks, elegant interiors, shops, restaurants, entertainment venues, and photo-worthy areas. With its grand architecture and detailed decorations, it is a popular destination for visitors who want to experience a unique and luxurious atmosphere while exploring Macau.</p>
       </td>
   </table>
+  
+  <main>
+    <form>
+      <fieldset>
+        <legend style="text-align: center;">Suggest a Place</legend>
+        
+        <p>
+          <label for="name">Place Name</label><br>
+          <input type="text" id="place" required>
+        </p>
+        
+        <p>
+          <legend>Category</legend>
+        </p>
+        
+        <p>
+          <input type="radio" id="d1" name="category" value="food_dining">
+          <label for="d1">Food & Dining</label>
+        </p>
+        <p>
+          <input type="radio" id="d2" name="category" value="entertainment">
+          <label for="d2">Entertainment</label>
+        </p>
+        <p>
+          <input type="radio" id="d3" name="category" value="nature_scenic">
+          <label for="d3">Nature & Scenic</label>
+        </p>
+        
+        <legend>What's good about this place?</legend>
+        <p>
+          <input type="checkbox" id="feature1" name="place_features" value="affordable">
+          <label for="feature1">Affordable</label>
+        </p>
+        <p>
+          <input type="checkbox" id="feature2" name="place_features" value="fun_activities">
+          <label for="feature2">Fun activities</label>
+        </p>
+        <p>
+          <input type="checkbox" id="feature2" name="place_features" value="great_for_photos">
+          <label for="feature3">Great for photos</label>
+        </p>
+        
+        <p>
+          <label for="name">Contact email</label><br>
+          <input type="email" id="name" name="name" required>
+        </p>
+        
+        <button type="submit">Share a Spot</button>
+      </fieldset>
+    </form>
+  
 </body>
 
 </html>
