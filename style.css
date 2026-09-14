@@ -31,10 +31,10 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    font-size: 20px;
 }
 
 nav li {
-    display: inline-block;
     margin-right: 10px;
 }
 
@@ -66,7 +66,6 @@ footer {
 
 h1 {
     font-family: Bradley Hand, cursive, sans-serif;
-    text-align: center;
     color: var(--dark-ink);
 }
 
@@ -100,4 +99,23 @@ button {
 input:focus, textarea:focus {
     outline: 3px solid var(--brand-color);
     outline-offset: 2px;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: var(--brand-color);
+}
+
+.site-header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.site-place {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
