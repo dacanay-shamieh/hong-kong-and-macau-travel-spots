@@ -64,7 +64,8 @@ footer {
     border-left: 5px solid var(--dark-ink);
     padding: 16px;
     margin-bottom: 16px;
-    flex: 1 1 240px;
+    width: 100%;
+    max-width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
