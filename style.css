@@ -59,12 +59,8 @@ footer {
 
 .site-place img {
     width: 100%;
-    max-width: 250px;
+    max-width: 350px;
     height: auto;
-}
-
-html, body {
-    max-width: 100%;
 }
 
 .place-entry-card {
