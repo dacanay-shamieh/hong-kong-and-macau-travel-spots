@@ -181,7 +181,15 @@ input:focus, textarea:focus {
 }
 
 .site-place img {
-    width: 350px;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+.place-entry-card img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
 aside {
