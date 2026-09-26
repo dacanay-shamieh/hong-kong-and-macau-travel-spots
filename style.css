@@ -129,12 +129,6 @@ button {
     cursor: pointer;
 }
 
-html, body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
 input:focus, textarea:focus {
     outline: 3px solid var(--brand-color);
     outline-offset: 2px;
@@ -148,10 +142,21 @@ input:focus, textarea:focus {
     background-color: var(--light-background);
 }
 
+@media (min-width: 700px) {
+    .site-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+}
+
 .site-header nav ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     margin: 0;
+    justify-content: center;
 }
 
 .site-place {
