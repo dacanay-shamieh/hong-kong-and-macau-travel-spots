@@ -152,16 +152,6 @@ input:focus, textarea:focus {
         align-items: center;
         padding: 10px 20px;
     }
-    .site-place {
-        flex-direction: row;
-        text-align: left;
-    }
-    .site-header nav {
-        width: auto;
-    }
-    .site-header nav ul {
-        gap: 20px;
-    }
 }
 
 .site-header nav ul {
