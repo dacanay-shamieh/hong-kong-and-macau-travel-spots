@@ -188,8 +188,14 @@ input:focus, textarea:focus {
 
 .place-entry-card img {
     width: 100%;
-    max-width: 400px;
+    max-width: 280px;
     height: auto;
+}
+
+@media (min-width: 700px) {
+    .place-entry-card img {
+        max-width: 400px;
+    }
 }
 
 aside {
