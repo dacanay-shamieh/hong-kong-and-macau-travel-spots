@@ -48,12 +48,23 @@ nav a {
 
 main {
     background-color: var(--light-background);
+    min-width: 0;
 }
 
 footer {
     background-color: var(--light-background);
     text-align: center;
     padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .place-entry-card {
@@ -78,6 +89,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    width: 100%;
 }
 
 .place-entry-card h3 {
