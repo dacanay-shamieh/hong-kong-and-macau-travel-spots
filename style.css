@@ -57,11 +57,6 @@ footer {
     padding: 10px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 html, body {
     max-width: 100%;
     overflow-x: hidden;
