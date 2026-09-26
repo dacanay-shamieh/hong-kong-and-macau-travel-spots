@@ -75,6 +75,12 @@ footer {
     text-align: center;
 }
 
+@media (min-width: 700px) {
+    .place-entry-card {
+        width: calc(50% - 12px);
+    }
+}
+
 .place-grid {
     display: flex;
     flex-wrap: wrap;
@@ -182,8 +188,16 @@ input:focus, textarea:focus {
 
 .site-place img {
     width: 100%;
-    max-width: 250px;
+    max-width: 350px;
     height: auto;
+}
+
+@media (min-width: 700px) {
+    .site-place img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
 }
 
 .place-entry-card img {
