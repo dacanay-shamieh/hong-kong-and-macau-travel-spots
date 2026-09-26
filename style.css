@@ -19,7 +19,7 @@ body {
 
 header {
     background-color: var(--light-background);
-    color: var(--dark-ink);
+    grid-area: masthead;
 }
 
 nav {
@@ -63,7 +63,7 @@ footer {
     padding: 16px;
     margin-bottom: 16px;
     flex: 1 1 240px;
-    height: 600px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,11 +80,22 @@ footer {
 .place-entry-card h3 {
     font-family: Bradley Hand, cursive, sans-serif;
     color: var(--dark-ink);
-    font-size: 20px;
+    font-size: 30px;
 }
 
 h1 {
     font-family: Bradley Hand, cursive, sans-serif;
+    color: var(--dark-ink);
+    text-align: center;
+}
+
+p, h3, li {
+    font-size: 20px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
     color: var(--dark-ink);
 }
 
@@ -124,17 +135,44 @@ input:focus, textarea:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px;
-    background-color: var(--brand-color);
+    padding: 10px;
+    background-color: var(--light-background);
 }
 
 .site-header nav ul {
     display: flex;
     gap: 20px;
+    margin: 0;
 }
 
 .site-place {
     display: flex;
     align-items: center;
     gap: 16px;
+}
+
+.page-main {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+        "masthead masthead"
+        "side main"
+        "foot foot";
+    gap: 16px;    
+}
+
+header {
+    grid-area: masthead; 
+}
+
+aside {
+    grid-area: side;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: foot;
 }
