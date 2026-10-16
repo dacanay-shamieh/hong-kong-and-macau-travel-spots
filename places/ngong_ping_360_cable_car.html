@@ -10,6 +10,7 @@
 
 <body class="page-main" style="background-color:tan">
 <header>
+  <h1 id="guideName">Hong Kong & Macau Travel Spots</h1>
   <table>
     <tr>
       <th><h1>Ngong Ping 360 Cable Car</h1></th>
@@ -46,6 +47,9 @@
 
   <h3>Travel Tips</h3>
     <p>"Wear comfortable shoes for walking."</p>
+
+  <h3>Places Featured</h3>
+  <p><span id="placeCount"></span> - Places</p>  
 </aside>
 
   <main>
@@ -54,8 +58,8 @@
         <legend style="text-align: center;">Suggest a Place</legend>
         
         <p>
-          <label for="name">Place Name</label><br>
-          <input type="text" id="name" required>
+          <label for="placename">Place Name</label>
+          <input type="text" id="placename" required>
         </p>
         
         <p>
@@ -85,7 +89,7 @@
           <label for="feature2">Fun activities</label>
         </p>
         <p>
-          <input type="checkbox" id="feature2" name="place_features" value="great_for_photos">
+          <input type="checkbox" id="feature3" name="place_features" value="great_for_photos">
           <label for="feature3">Great for photos</label>
         </p>
         
@@ -97,7 +101,13 @@
         <button type="submit">Share a Spot</button>
       </fieldset>
     </form>
-  
+  </main>
+
+<footer id="copyright">
+      © 2026 Hong Kong & Macau Travel Spots. All rights reserved.
+    </footer>
+
+  <script src="../script.js"></script>
 </body>
 
 </html>

@@ -13,7 +13,7 @@
   <div class="site-place">
    <img src="images/hk&macautravelspotsLogo.png" alt="A photo of Hong Kong & Macau Travel Spots logo">
     <div>
-     <h1>Hong Kong & Macau Travel Spots</h1>
+     <h1 id="guideName">Hong Kong & Macau Travel Spots</h1>
       <p>Discover iconic sights, cultural gems, and magical destinations.</p>
     </div>
   </div>
@@ -38,11 +38,14 @@
 
   <h3>Travel Tips</h3>
     <p>"Plan early, pack light, and stay flexible"</p>
+
+  <h3>Places Featured</h3>
+  <p><span id="placeCount"></span> - Places</p>  
 </aside>
 
 <main>
 <h2 style="text-align:center">My Must-Visits</h2>
-<div class="place-grid">
+<div id="places" class="place-grid">
 <article class="place-entry-card">
   <h3 id="ngongping">Ngong Ping 360 Cable Car</h3>
   <p>Scenic Attraction</p>
@@ -85,9 +88,11 @@
 </div>
 </main>
 
-    <footer>
+    <footer id="copyright">
       © 2026 Hong Kong & Macau Travel Spots. All rights reserved.
     </footer>
+
+    <script src="script.js"></script>
 
   </body>
 </html>
