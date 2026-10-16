@@ -10,12 +10,42 @@ const places = ['Ngong Ping 360 Cable Car', 'Big Buddha', 'The Londoner Macau', 
 const placeCount = places.length;
 document.getElementById('placeCount').textContent = placeCount;
 
-function displayText(id, text) {
-    const element = document.getElementById(id);
+//rating
+const placeRating = 4.5;
+const ratingLabel = document.getElementById("rating");
 
-    if (element) {
-        element.textContent = text;
+if (ratingLabel) {
+    if (placeRating >= 4) {
+        ratingLabel.textContent = "Highly recommended";
+    } else if (placeRating >= 2.5) {
+        ratingLabel.textContent = "Worth a visit";
+    } else {
+        ratingLabel.textContent = "Only if you're nearby";
     }
+}
+
+//budget
+const priceLevel = 5;
+const isOpen = true;
+const budgetResult = document.getElementById("budget");
+
+if (budgetResult) {
+    const isAffordableAndOpen =
+        priceLevel >= 3 && isOpen === true;
+
+    budgetResult.textContent = isAffordableAndOpen
+        ? "Good option right now"
+        : "Maybe another time";
+}
+
+//distance
+const walkingDistance = false;
+const distanceNote = document.getElementById("distance");
+
+if (distanceNote) {
+    distanceNote.textContent = walkingDistance === true
+        ? "Walking distance"
+        : "Better to commute";
 }
 
 //console
